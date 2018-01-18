@@ -18,3 +18,10 @@ SHA-1 fingerprint of keystore certificate
 ```
 > keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android 
 ```
+
+GET SHA-1 in base64
+```
+> keytool -exportcert -alias androiddebugkey -keystore debug.keystore > debug.keystore.txt
+> openssl sha1 -binary debug.keystore.txt > debug.keystore.sha1.txt
+> openssl base64 -in debug.keystore.sha1.txt > debug.keystore.sha1.base64.txt
+```
