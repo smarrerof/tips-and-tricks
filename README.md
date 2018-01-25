@@ -25,3 +25,10 @@ GET SHA-1 in base64
 > openssl sha1 -binary debug.keystore.txt > debug.keystore.sha1.txt
 > openssl base64 -in debug.keystore.sha1.txt > debug.keystore.sha1.base64.txt
 ```
+
+Record screen
+```
+> adb shell
+> screenrecord /sdcard/video.mp4
+> CTRL+C to stop recording
+```
