@@ -32,3 +32,10 @@ Record screen
 > screenrecord /sdcard/video.mp4
 > CTRL+C to stop recording
 ```
+
+Google Maps running in Windows (more info [here](https://stackoverflow.com/questions/45121828/android-studio-suddenly-got-gpu-driver-issue-when-running-emulator))
+```
+> cd C:\Users\<userName>\AppData\Local\Android\sdk\emulator
+> emulator -list-avds (Find emulator to run by listing available ones)
+> emulator -avd avd_name -gpu host (Run emulator with -gpu host option)
+```
