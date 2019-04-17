@@ -39,3 +39,12 @@ Google Maps running in Windows (more info [here](https://stackoverflow.com/quest
 > emulator -list-avds (Find emulator to run by listing available ones)
 > emulator -avd avd_name -gpu host (Run emulator with -gpu host option)
 ```
+
+Launch android emulator from command line
+```
+OSX
+$ cd %USERPROFILE%\AppData\Local\Android\Sdk\emulator && emulator -gpu host -avd Nexus_5_API_28
+
+WIN
+$ cd $HOME/Library/Android/sdk/emulator & emulator -avd Nexus_5_API_28
+```
