@@ -48,3 +48,14 @@ $ cd %USERPROFILE%\AppData\Local\Android\Sdk\emulator && emulator -gpu host -avd
 WIN
 $ cd $HOME/Library/Android/sdk/emulator & emulator -avd Nexus_5_API_28
 ```
+
+## GIT
+Delete local branch
+```
+> git branch -d <branch_name>
+```
+
+Update the local list of remote branches
+```
+> git remote update origin --prune
+```
